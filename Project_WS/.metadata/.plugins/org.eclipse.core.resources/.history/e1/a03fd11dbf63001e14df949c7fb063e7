@@ -1,0 +1,33 @@
+/*
+ * calc.h
+ *
+ *  Created on: 5 Oct 2023
+ *      Author: maria
+ */
+
+#ifndef CALC_H_
+#define CALC_H_
+
+/*************************************************************************************************
+ *                         Important Includes
+************************************************************************************************/
+#include"keypad.h"
+#include"lcd.h"
+#include<util/delay.h>
+#include"std_types.h"
+
+/*************************************************************************************************
+ *                            Important  Function Definition
+ ************************************************************************************************/
+/*description :
+this fn take the 3 inputs operand1,operand2,operator by taking all +ve and -ve operators until the
+1st digit(number) is entered now it start considering it as operand1 until 1st operator is entered
+this is the operator value and the rest of the digits are for operand2
+ */
+void Calc_takeInput1(sint16 *op1,uint8 *operation,sint16 * op2 );
+
+
+/*description : fn the perform the calculation based on the input from the user */
+void perform_calculation (sint16 *op1,uint8 *operation,sint16 * op2);
+
+#endif /* CALC_H_ */

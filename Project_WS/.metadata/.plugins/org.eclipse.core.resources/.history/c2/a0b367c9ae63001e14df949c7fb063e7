@@ -1,0 +1,33 @@
+/*
+ * calc.h
+ *
+ *  Created on: 5 Oct 2023
+ *      Author: maria
+ */
+
+#ifndef CALC_H_
+#define CALC_H_
+
+/*************************************************************************************************
+ *                         Important Includes
+************************************************************************************************/
+#include"keypad.h"
+#include"lcd.h"
+#include<util/delay.h>
+#include"std_types.h"
+
+/*************************************************************************************************
+ *                            Important  Function Definition
+ ************************************************************************************************/
+/*description :
+ * to take the input of operand1 and operand 2 from the used and display it on the LCD and store
+ *  it in global arrays operand1 and operand2 and return either 1 or 0 if 1->=is pressed go
+ *  perform calculations if 0-> do nothing
+ */
+uint8 Calc_takeOperand(sint16 operand );
+
+
+/*description : fn the perform the calculation based on the input from the user */
+void perform_calculation (sint16 operand1,uint8 operator,sint16  operand2);
+
+#endif /* CALC_H_ */

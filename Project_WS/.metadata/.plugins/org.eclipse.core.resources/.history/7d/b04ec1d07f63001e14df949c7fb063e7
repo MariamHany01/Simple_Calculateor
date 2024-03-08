@@ -1,0 +1,20 @@
+/*
+ * calc.h
+ *
+ *  Created on: 5 Oct 2023
+ *      Author: maria
+ */
+
+#ifndef CALC_H_
+#define CALC_H_
+
+/*************************************************************************************************
+ *                         Important Includes
+************************************************************************************************/
+#include"keypad.h"
+#include"lcd.h"
+#include<util/delay.h>
+#include"std_types.h"
+
+
+#endif /* CALC_H_ */

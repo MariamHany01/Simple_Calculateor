@@ -1,0 +1,35 @@
+/*
+ * calc.h
+ *
+ *  Created on: 5 Oct 2023
+ *      Author: maria
+ */
+
+#ifndef CALC_H_
+#define CALC_H_
+
+/*************************************************************************************************
+ *                         Important Includes
+************************************************************************************************/
+#include"keypad.h"
+#include"lcd.h"
+#include<util/delay.h>
+#include"std_types.h"
+
+/*************************************************************************************************
+ *                            Important  Function Definition
+ ************************************************************************************************/
+/*description :
+ * to take the input of operand1 and operand 2 from the used and display it on the LCD and store
+ *  it in global arrays operand1 and operand2
+ */
+void Calc_takeOperand(sint16 *operand );
+
+
+/*description :
+ * to take the input of operator from the user and display it on the LCD and store
+ *  it in global array operator
+ */
+void Calc_takeOperator(uint8 * operand );
+
+#endif /* CALC_H_ */
